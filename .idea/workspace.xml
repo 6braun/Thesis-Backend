@@ -20,7 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b49633e6-6cd2-4912-b8c0-350d7b6b0aed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +62,7 @@
       <option name="presentableId" value="Default" />
       <updated>1605795746864</updated>
       <workItem from="1605795748192" duration="747000" />
+      <workItem from="1605806029139" duration="1275000" />
     </task>
     <servers />
   </component>
@@ -76,5 +79,12 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="100" y="127" width="1720" height="853" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1605803417617">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="100" y="127" width="1720" height="853" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1605803417617" />
   </component>
 </project>
