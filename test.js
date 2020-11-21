@@ -1,36 +1,80 @@
 // Erstes minimales Backend
-
-fs = require('fs');
 path = require('path');
 
 const bodyparser = require("body-parser");
 const cors = require("cors");
+
+// Express ist ein Framework zur Bereitstellung einer REST-API
 const express = require("express");
+
+// Ist eine Middleware zur Behandlung von multipart/form-data,
+// also dem Upload aus dem Frontend
+const multer = require("multer");
+// API für die Ethereum-Blockchain
+const web3 = require("web3")
 
 const app = express();
 
-var corsOptions = {
-    "origin": "http://localhost:4200"
-}
-app.use(cors(corsOptions))
-app.use(bodyparser.json());
-app.use(express.static('images'))
 
+app.use(cors())
+app.use(bodyparser.json());
+
+
+const storage = multer.diskStorage({
+
+    // Setzen des Verzeichnis für die Uploads
+    destination: function (req, file, cb) {
+        cb(null, 'uploads')
+    },
+
+    // Namen der hochgeladenen Datei setzen
+    filename: function (req, file, cb) {
+        console.log(file);
+        cb(null, file.originalname);
+    }
+})
+
+var upload = multer({
+    storage: storage,
+    fileFilter(req, file, cb) {
+        if (!file.originalname.match(/\.jpg$/)) {
+            //Error
+            cb(new Error('Nur jpgs dürfen hochgeladen werden'));
+        }
+        //Success
+        cb(undefined, true);
+    }
+})
+// GETTER-METHODE FÜR DAS BELUGA-BILD
 app.get('/beluga', (req, res) => {
-    // res.json({'message': 'Yo moin'});
-    const filePath = path.join(__dirname, './images/beluga.jpg')
+    const filePath = path.join(__dirname, './images/beluga.jpg');
     res.sendFile(filePath);
     //res.end();
+});
+
+// GETTER-METHODE FÜR DAS FUCHS-BILD
+app.get('/foxes', (req, res) => {
+    const filePath = path.join(__dirname, './images/foxes.jpg');
+    res.sendFile(filePath);
+    //res.end();
+});
+// POST-REQUEST, MIT DER DATEIEN HOCHGELADEN WERDEN KÖNNEN (SIEHE /uploads)
+app.post('/upload', upload.single('uploadedImage'), (req, res, next) => {
+    const file = req.file;
+    if (!file) {
+        const error = new Error('Datei ungültig')
+        error.httpStatusCode = 400
+        return next(error)
+    }
+    res.status(200).send({
+        statusCode: 200,
+        status: 'success',
+        uploadedFile: file
+    })
+}, (error, req, res) => {
+    res.status(400).send({
+        error: error.message
+    })
 })
-// let filePath;
-// if (req.url === '/beluga') {
-//     filePath = path.join(__dirname, './images/beluga.jpg')
-// } else {
-//     filePath = path.join(__dirname, './images/baum.jpeg')
-//
-// }
-// const stat = fs.readFileSync(filePath)
-// res.write(stat);
-// res.end();
 
 app.listen(3000, () => console.log('Listening'))
