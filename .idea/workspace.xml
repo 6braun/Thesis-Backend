@@ -20,15 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b49633e6-6cd2-4912-b8c0-350d7b6b0aed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/images/foxes.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/deutscher-schäferhund.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/koala.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/meerkat.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/otters.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/abis/AdvertContract.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blockchain.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,9 +55,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.19.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="10.17.45" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Frontend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -74,6 +75,8 @@
       <workItem from="1605795748192" duration="747000" />
       <workItem from="1605806029139" duration="1358000" />
       <workItem from="1605980467450" duration="34000" />
+      <workItem from="1610249089878" duration="614000" />
+      <workItem from="1619984309658" duration="2666000" />
     </task>
     <servers />
   </component>
