@@ -1,9 +1,7 @@
-const HDWalletProvider = require("@truffle/hdwallet-provider");
-const { ethers } = require('ethers')
+const {ethers} = require('ethers')
+const fs = require('fs');
 
 const abi = require('./abis/AdvertContract.json');
-
-console.log(abi);
 
 
 const mnemonic = '0xdaa62747cf7bd46238ac388bca529ae8d85b2dbcf32ad4bcdb7f6477e991f60d';
@@ -25,18 +23,36 @@ const ABI = ['function receiveEther() payable public',
 const contract = new ethers.Contract(abi.networks['3'].address, ABI, provider)
 const signedContract = contract.connect(signer);
 
-contract.getBalance().then(res => console.log(parseInt(res, 16)));
+// contract.getBalance().then(res => console.log(parseInt(res, 16)));
 
 function sendMoney() {
 
-    // Fix von ricmoo @ Github
     const dai = ethers.utils.parseEther('0.1');
+
+    // Fix von ricmoo @ Github
     const overrides = {
         value: dai
     };
     signedContract.receiveEther(overrides).then(res => console.log(res));
 }
 
+function getBalance() {
+    contract.getBalance().then(res => console.log(parseInt(res, 16)));
+}
 
+function getIndex() {
+    var files = fs.readdirSync('./uploads/');
+    let index;
+    files = files.map(el => {
+        return parseInt(el.substring(el.indexOf('_') + 1, el.length))
+            ;
+    });
+    index = files.reduce((a, b) => Math.max(a, b));
+    return index;
+}
 
-// sendMoney();
+function getSigner() {
+    return signer;
+}
+
+module.exports = {getIndex, getSigner, sendMoney, getBalance};
