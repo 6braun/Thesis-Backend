@@ -20,25 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b49633e6-6cd2-4912-b8c0-350d7b6b0aed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/uploads/ada_12345_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/ada_12345_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/ada_12345_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/ada_12345_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/ada_12345_5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/ada_12345_6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/ada_12345_7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/ada_12345_8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/ada_12345_9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/uploads/beluga_1.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/abis/AdvertContract.json" beforeDir="false" afterPath="$PROJECT_DIR$/abis/AdvertContract.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blockchain.js" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/baum.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/beluga.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/foxes.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/Download.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/Red_Kitten_01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/csm_Katze_eingewoehnen_MERA-Katzenratgeber_85ea6d4ff6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/deutscher-schäferhund.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/koala.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/meerkat.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/otters.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,13 +58,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.19.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="10.17.45" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/abis" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/abis" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -92,7 +82,7 @@
       <workItem from="1605980467450" duration="34000" />
       <workItem from="1610249089878" duration="614000" />
       <workItem from="1619984309658" duration="2775000" />
-      <workItem from="1620068750470" duration="16701000" />
+      <workItem from="1620068750470" duration="22806000" />
     </task>
     <servers />
   </component>

@@ -15,9 +15,12 @@ const provider = new ethers.providers.InfuraProvider(
 const signer = new ethers.Wallet(mnemonic, provider)
 
 
-const ABI = ['function receiveEther() payable public',
+ABI = [
+    'function receiveEther() payable public',
     'function getBalance() public view returns (uint)',
-    'function withdrawEtherTo(address payable _to) public'];
+    'function withdrawEtherTo(address payable _to) public',
+    'function receiveNewAd(uint _id, uint _wei) payable public',
+    'function getFunds(uint _id) public view returns(uint)'];
 
 
 const contract = new ethers.Contract(abi.networks['3'].address, ABI, provider)
@@ -34,6 +37,14 @@ function sendMoney() {
         value: dai
     };
     signedContract.receiveEther(overrides).then(res => console.log(res));
+}
+
+function newAd(body) {
+    return signedContract.receiveNewAd(body.id, body.funds);
+}
+
+function getFunds(_id) {
+    signedContract.getFunds(_id).then(res => console.log(res));
 }
 
 function getBalance() {
@@ -55,4 +66,6 @@ function getSigner() {
     return signer;
 }
 
-module.exports = {getIndex, getSigner, sendMoney, getBalance};
+module.exports = {getIndex, getSigner, sendMoney, getBalance, newAd};
+
+

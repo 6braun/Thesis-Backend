@@ -48,17 +48,26 @@ app.post('/upload', upload.single('uploadedImage'), (req, res) => {
     const filename = originalFilename + index + '.jpg';
     const targetPath = path.join(__dirname, "./uploads/" + filename);
 
-    if (path.extname(req.file.originalname).toLowerCase() === ".jpeg") {
+    if (path.extname(req.file.originalname).toLowerCase() === ".jpg") {
         fs.rename(tempPath, targetPath, err => {
             if (err) return handleError(err, res);
 
             res
                 .status(200)
                 .contentType("text/plain")
+                .append('id', getIndexAsNumber(index).toString())
                 .end("File uploaded!");
         });
 
-        console.log(parseInt(req.body['etherSend']));
+        const newAd = {
+            id: getIndexAsNumber(index),
+            funds: parseFloat(req.body['etherSend']) * (10**18)
+        };
+
+        blockchain.newAd(newAd).then(res => console.log(res));
+
+        console.log(newAd);
+
     } else {
         fs.unlink(tempPath, err => {
             if (err) return handleError(err, res);
@@ -105,4 +114,6 @@ function getIndexAsNumber(_index) {
     let index = _index.substring(_index.indexOf('_') + 1, _index.length);
     return parseInt(index);
 }
+
+
 
