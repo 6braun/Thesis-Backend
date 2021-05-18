@@ -1,7 +1,7 @@
 const {ethers} = require('ethers')
 const fs = require('fs');
 
-const abi = require('./abis/AdvertContract.json');
+const contractJson = require('./abis/AdvertContract.json');
 
 
 const mnemonic = '0xdaa62747cf7bd46238ac388bca529ae8d85b2dbcf32ad4bcdb7f6477e991f60d';
@@ -24,7 +24,7 @@ ABI = [
     'function showAd(uint _id) public'];
 
 
-const contract = new ethers.Contract(abi.networks['3'].address, ABI, provider)
+const contract = new ethers.Contract(contractJson.networks['3'].address, ABI, provider)
 const signedContract = contract.connect(signer);
 
 // contract.getBalance().then(res => console.log(parseInt(res, 16)));
@@ -46,17 +46,17 @@ function newAd(body) {
     return signedContract.augmentAds(body.id, body.funds);
 }
 
-function getFunds(_id) {
-    signedContract.getFunds(_id).then(res => console.log(res));
-}
-
-// function getBalance() {
-//     contract.getBalance().then(res => console.log(parseInt(res, 16)));
+// function getFunds(_id) {
+//     signedContract.getFunds(_id).then(res => console.log(res));
 // }
 
-function getSigner() {
-    return signer;
-}
+// // function getBalance() {
+// //     contract.getBalance().then(res => console.log(parseInt(res, 16)));
+// // }
+
+// function getSigner() {
+//     return signer;
+// }
 
 function showAd(id){
     return signedContract.showAd(id);

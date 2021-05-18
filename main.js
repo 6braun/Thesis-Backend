@@ -68,8 +68,7 @@ app.post('/upload', upload.single('uploadedImage'), (req, res) => {
             res
                 .status(200)
                 .contentType("text/plain")
-                .append('id', getIndexAsNumber(index).toString())
-                .end("File uploaded!");
+                .end("Your Id is:" + getIndexAsNumber(index).toString());
         });
 
         const newAd = {
@@ -93,6 +92,9 @@ app.post('/upload', upload.single('uploadedImage'), (req, res) => {
 
 app.listen(3000, () => console.log('Listening'));
 
+
+
+// Helferfunktionen für das Behandeln von Indezes in diesem Anwendungsfall
 
 function getIndex() {
     var files = fs.readdirSync('./uploads/');

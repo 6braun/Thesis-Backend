@@ -20,17 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b49633e6-6cd2-4912-b8c0-350d7b6b0aed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/uploads/baum_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/baum_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/uploads/baum_5.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/abis/AdvertContract.json" beforeDir="false" afterPath="$PROJECT_DIR$/abis/AdvertContract.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blockchain.js" beforeDir="false" afterPath="$PROJECT_DIR$/blockchain.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/beluga_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/uploads/beluga_2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/foxes_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/uploads/foxes_1.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +79,7 @@
       <workItem from="1620124689456" duration="13161000" />
       <workItem from="1620140575946" duration="362000" />
       <workItem from="1620141143862" duration="3923000" />
-      <workItem from="1620159522813" duration="2482000" />
+      <workItem from="1620159522813" duration="3253000" />
     </task>
     <servers />
   </component>
